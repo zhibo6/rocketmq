@@ -59,6 +59,10 @@ public class NamesrvStartup {
             }
 
             final NamesrvConfig namesrvConfig = new NamesrvConfig();
+            /**
+             * 设置RocketMQHome
+             */
+            namesrvConfig.setRocketmqHome("D:\\workspace_idea\\rocketmq\\distribution");
             final NettyServerConfig nettyServerConfig = new NettyServerConfig();
             nettyServerConfig.setListenPort(9876);
             if (commandLine.hasOption('c')) {

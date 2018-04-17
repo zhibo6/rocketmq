@@ -36,7 +36,10 @@ public class Consumer {
          * Instantiate with specified consumer group name.
          */
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("please_rename_unique_group_name_4");
-
+        /**
+         * 为 consumer 配置 name server address
+         */
+        consumer.setNamesrvAddr("localhost:9876");
         /*
          * Specify name server addresses.
          * <p/>

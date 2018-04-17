@@ -32,7 +32,10 @@ public class Producer {
          * Instantiate with a producer group name.
          */
         DefaultMQProducer producer = new DefaultMQProducer("please_rename_unique_group_name");
-
+        /**
+         * 为 producer 配置 name server address
+         */
+        producer.setNamesrvAddr("localhost:9876");
         /*
          * Specify name server addresses.
          * <p/>
